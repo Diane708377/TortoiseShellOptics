@@ -173,3 +173,29 @@ footer {
 h5 {
   margin-left: 1rem;
 }
+
+/* The first breaking point is applied,
+when the the viewport shrinking doesn't give the possibility
+to read properly all the text on the right side of the page. */
+
+@media only screen and (max-width: 1000px) {
+  .headerContainer, main {
+    width: 100%;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  .logoNavContainer {
+    margin-top: 0rem;
+  }
+
+  .bannerContainer h1 {
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right:2rem;
+    padding: 0.75rem 4rem;
+    position: static;
+  }
+}
