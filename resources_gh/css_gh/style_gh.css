@@ -11,6 +11,9 @@ body {
 
 .logoNavContainer, .contactItem h2 {
   background-color: cadetblue;
+}
+
+.logoContainer h3, nav a, .contactItem h2 {
   color: white;
 }
 
@@ -20,4 +23,64 @@ body {
 
 .logoNavContainer, main {
   width: 960px;
+}
+
+h3, nav li, h1 {
+  display: inline-block;
+}
+
+/* flexbox styles */
+
+header, .logoNavContainer, .logoContainer {
+  display: flex;
+}
+
+header {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logoNavContainer, .logoContainer {
+  align-items: center;
+}
+
+.logoNavContainer {
+  justify-content: space-between;
+}
+
+/* header styles */
+
+header {
+  background-image: url("../images_gh/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+}
+
+.logoNavContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.logoContainer img {
+  height: 1.5rem;
+  padding: 1rem;
+}
+
+nav li {
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.bannerContainer h1 {
+  background-color: white;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
 }
