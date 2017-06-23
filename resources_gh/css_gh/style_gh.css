@@ -199,3 +199,76 @@ to read properly all the text on the right side of the page. */
     position: static;
   }
 }
+
+/* The second breaking point is when menu items can no longer be read
+on one clear line, and when one of the right service item begins to be cut off */
+
+@media only screen and (max-width:500px) {
+  .headerContainer, .bannerContainer, h1, main, .contactContainer, .contactItem, h2 {
+    width: 100%;
+  }
+
+  header, .headerContainer, main, .serviceContainer, .serviceItem, .contactContainer {
+    flex-direction: column;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logoNavContainer {
+    margin-top: 0;
+  }
+
+  .logoContainer h3, .first, .second, .third, footer h5 {
+    display: none;
+  }
+
+  .last {
+    display: inline-block;
+  }
+
+  .bannerContainer h1 {
+    font-size: 1rem;
+    margin-top: 9rem;
+    padding: 1rem;
+    position: static;
+    text-align: center;
+  }
+
+  .serviceContainer {
+    align-items: center;
+    margin-top: 0;
+    padding: 3.77rem;
+  }
+
+  .paper, .ruler {
+    margin-right: 0;
+  }
+
+  .serviceItem h4, .contactItem p {
+    font-size: 0.77rem;
+  }
+
+  .serviceItem {
+    padding-top: 1.54rem;
+  }
+
+  .contactItem h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .contactItem p {
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  #footerLogo {
+    margin: auto;
+  }
+}
