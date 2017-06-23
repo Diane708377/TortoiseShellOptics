@@ -31,7 +31,7 @@ h3, nav li, h1 {
 
 /* flexbox styles */
 
-header, .logoNavContainer, .logoContainer {
+header, .logoNavContainer, .logoContainer, footer {
   display: flex;
 }
 
@@ -40,7 +40,7 @@ header {
   align-items: flex-end;
 }
 
-.logoNavContainer, .logoContainer {
+.logoNavContainer, .logoContainer, footer {
   align-items: center;
 }
 
@@ -83,4 +83,20 @@ nav a {
   line-height: 1.2;
   margin-top: 10rem;
   padding: 1.5rem 5rem;
+}
+
+/* footer styles */
+
+footer {
+  background-color: azure;
+  margin-top: 5rem;
+  padding: 4rem;
+}
+
+#footerLogo img {
+  height: 1.5rem;
+}
+
+h5 {
+  margin-left: 1rem;
 }
