@@ -96,6 +96,10 @@ nav li {
   padding: 1rem;
 }
 
+.last {
+  display: none;
+}
+
 nav a {
   text-decoration: none;
 }
