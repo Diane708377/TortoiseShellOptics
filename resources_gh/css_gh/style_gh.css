@@ -1,0 +1,23 @@
+/* Universal and shared styles */
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.logoNavContainer, .contactItem h2 {
+  background-color: cadetblue;
+  color: white;
+}
+
+.bannerContainer h1, .contactItem h2 {
+  font-weight: bold;
+}
+
+.logoNavContainer, main {
+  width: 960px;
+}
